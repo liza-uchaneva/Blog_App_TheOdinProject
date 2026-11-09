@@ -1,24 +1,25 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A blog with articles and comments, built while working through the official [Rails Getting Started guide](https://guides.rubyonrails.org/getting_started.html) as part of [The Odin Project](https://www.theodinproject.com/).
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Create, read, update and delete articles
+- Comment on articles (nested `resources :comments`)
+- Validations: titles are required, and article bodies need at least 10 characters
 
-* System dependencies
+## Tech stack
 
-* Configuration
+Ruby on Rails 7.1 · SQLite · Hotwire · Importmap
 
-* Database creation
+## Running locally
 
-* Database initialization
+Requires Ruby 3.2.2.
 
-* How to run the test suite
+```bash
+bundle install
+bin/rails db:setup
+bin/rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then open http://localhost:3000.
